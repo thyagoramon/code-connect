@@ -1,6 +1,6 @@
 # Code Connect
 
-Projeto desenvolvido durante o curso 'JavaScript: entendendo promises e async/await' da formação de front-end da Alura. O projeto reproduz uma interface de rede social, com o processo de criação de nova publicação e o envio dos dados da para servidor (simulando a possibilidade de falha no envio e com lidar com isso usando programação assíncrona).
+Projeto desenvolvido durante o curso 'JavaScript: entendendo promises e async/await' da formação de front-end da Alura. O projeto reproduz uma interface de rede social, com o processo de criação de nova publicação e o envio dos dados para servidor (simulando a possibilidade de falha no envio e com lidar com isso usando programação assíncrona).
 
 **[Clique aqui para visualizar a página](https://thyagoramon.github.io/code-connect/)**
 
