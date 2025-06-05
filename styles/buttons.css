@@ -1,0 +1,52 @@
+.btn {
+    width: 100%;
+    font-size: var(--font-size-m);
+    padding: 12px 0;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+}
+.btn-border-green {    
+    background-color: transparent;
+    border: 1px solid;
+    color: var(--cor-verde);
+    &:hover {
+        color: var(--cor-roxo);
+        border: 1px solid var(--cor-roxo);
+    }
+}
+.btn-border-gray {
+    background-color: transparent;
+    border: 1px solid;
+    color: var(--cor-cinza-medio);
+    &:hover {
+        color: var(--cor-roxo);
+        border: 1px solid var(--cor-roxo);
+    }
+}
+.btn-solid-green {
+    background-color: var(--cor-verde);
+    border: none;
+    color: var(--cor-graffite);
+    &:hover {
+        background-color: var(--cor-roxo);
+    }
+}
+.btn-x {
+    background-color: var(--cor-cinza-medio);
+    border: none;
+    padding: 0 4px 1px 4px;
+    border-radius: 10px;
+    color: var(--cor-cinza-escuro);
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    &:hover {
+        background-color: var(--cor-cinza-claro);
+    }
+}

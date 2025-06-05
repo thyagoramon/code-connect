@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="styles/styles.css">
+	<link rel="stylesheet" href="styles/buttons.css">
+	<title>CodeConnect</title>
+	<script src="https://kit.fontawesome.com/98e4b96a46.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<div class="container">
+		<aside class="sidebar">
+			<a id="side-logo" class="sidebar-logo" href="#">
+				<img src="img/Logo.svg" alt="logo code connect">
+			</a>
+			<a id="side-publicar" class="sidebar-link link-active" href="#">
+				<i class="fa-solid fa-upload"></i>
+				<p>Publicar</p>
+			</a>
+			<a id="side-feed" class="sidebar-link link-disabled" href="#">
+				<i class="fa-solid fa-file"></i>
+				<p>Feed</p>
+			</a>
+			<a id="side-perfil" class="sidebar-link link-disabled" href="#">
+				<i class="fa-solid fa-user"></i>
+				<p>Perfil</p>
+			</a>
+			<a id="side-sobre" class="sidebar-link link-disabled" href="#">
+				<i class="fa-solid fa-circle-info"></i>
+				<p>Sobre nós</p>
+			</a>
+			<a id="side-sair" class="sidebar-link link-disabled" href="#">
+				<i class="fa-solid fa-right-from-bracket"></i>
+				<p>Sair</p>
+			</a>
+		</aside>
+
+		<main id="newproject" class="newproject">
+			<div class="newproject-upload">
+				<div id="newproject-upload-preview" class="newproject-upload-preview">
+					<i id="empty-preview" class="fa-solid fa-image"></i>
+					<img id="image-preview" src="" alt="imagem carregada">
+				</div>
+				<button id="btn-upload-img" class="btn btn-border-gray">
+					Carregar imagem
+					<i class="fa-solid fa-arrow-up-from-bracket"></i>
+				</button>
+				<input type="file" id="input-upload-img" accept="image/*" style="display: none;">
+				<div id="uploaded-img-info">
+					<p id="uploaded-img-name">nome do arquivo carregado</p>
+					<button id="remove-image-btn" class="btn-x">x</button>
+				</div>
+			</div>
+
+			<form id="newproject-form" class="newproject-form" action="">
+				<h2 class="form-titulo">Novo projeto</h2>
+				<div class="form-div">
+					<label class="form-label" for="input-nome">Nome do projeto</label>
+					<input class="form-input" type="text" id="input-nome" placeholder="Digite o nome do projeto"
+						name="nome">
+				</div>
+				<div class="form-div">
+					<label class="form-label" for="input-descricao">Descrição</label>
+					<textarea class="form-input" id="input-descricao" placeholder="Descreva o projeto" rows="5"
+						name="descrição"></textarea>
+				</div>
+				<div class="form-div">
+					<label class="form-label" for="input-tags">Tags</label>
+					<input class="form-input" type="text" id="input-tags" placeholder="Digite as tags do projeto">
+					<div id="form-tags-list">
+					</div>
+				</div>
+				<div class="form-btns">
+					<button class=" btn btn-border-green" id="btn-cancel">
+						Descartar
+						<i class="fa-solid fa-trash"></i>
+					</button>
+					<button class=" btn btn-solid-green" id="btn-publish">
+						Publicar
+						<i class="fa-solid fa-share-from-square"></i>
+					</button>
+				</div>
+			</form>
+
+		</main>
+
+		<main id="underConstruction" class="underConstruction">
+			<i class="fa-solid fa-person-digging"></i>
+			<p>Em construção</p>
+		</main>
+	</div>
+
+	<script src="scripts/load_image.js"></script>
+	<script src="scripts/tags.js"></script>
+	<script src="scripts/form.js"></script>
+	<script src="scripts/side_bar.js"></script>
+</body>
+
+</html>
